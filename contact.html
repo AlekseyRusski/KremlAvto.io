@@ -89,16 +89,17 @@
         <div class="contact-form-container">
           <h2 class="contact-title">Напиште нам</h2>
           <p>И мы свяжемся с вами!</p>
-          <form action="#" method="post" class="tm-contact-form">
+          <form action="https://api.web3forms.com/submit" method="post" class="tm-contact-form">
+            <input type="hidden" name="access_key" value="ab4f50fa-aea3-4bbc-9389-fa618b2eec2b">
               <div class="col-lg-5 col-md-5 contact-form-left">
                 <div class="form-group">
-                    <input type="text" id="contact_name" class="form-control" placeholder="ИМЯ" />
+                    <input type="text" id="contact_name" name="name" class="form-control" placeholder="ИМЯ" required />
                 </div>
                 <div class="form-group">
-                    <input type="email" id="contact_email" class="form-control" placeholder="EMAIL" />
+                    <input type="email" id="contact_email" name="email" class="form-control" placeholder="EMAIL" required/>
                 </div>
                 <div class="form-group">
-                    <input type="text" id="contact_subject" class="form-control" placeholder="ТЕМА" />
+                    <input type="text" id="contact_subject" name="message" class="form-control" placeholder="ТЕМА" required/>
                 </div>                
               </div>
               <div class="col-lg-7 col-md-7 contact-form-right">
@@ -121,6 +122,11 @@
         </div>  
       </div>      
     </section>
+    <div style="position:relative;overflow:hidden;">
+      <a href="https://yandex.ru/maps/65/novosibirsk/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Novosibirsk</a>
+      <a href="https://yandex.ru/maps/65/novosibirsk/house/prospekt_karla_marksa_20k8/bEsYfwdnSUwOQFtufXV5d39iYQ==/?ll=82.909018%2C54.986862&utm_medium=mapframe&utm_source=maps&z=16.8" style="color:#eee;font-size:12px;position:absolute;top:14px;">Karla Marksa Avenue, 20к8 — Yandex Maps</a>
+      <iframe src="https://yandex.ru/map-widget/v1/?ll=82.909018%2C54.986862&mode=whatshere&whatshere%5Bpoint%5D=82.906554%2C54.986489&whatshere%5Bzoom%5D=17&z=16.8" width="1360" height="600" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+    </div>
 
     
     
